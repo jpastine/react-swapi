@@ -1,13 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import StarshipList from './pages/StarshipList/StarshipList';
+import StarshipDetails from './pages/StarshipDetails/StarshipDetails';
+import { Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
+    <>
       <header>
         STARWARS STARSHIPS
       </header>
-    </div>
+      <div className="App">
+      <Routes>
+        <Route path='/' element={<StarshipList />} />
+        <Route path='/starship' element={<StarshipDetails />}/>
+      </Routes>
+      </div>
+    </>
   );
 }
 
