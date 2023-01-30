@@ -1,0 +1,23 @@
+#starships {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  /* background-color: black; */
+}
+
+.starship {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: black;
+  color: white;
+  
+  border: solid white;
+  height: 100px;
+  width: 200px;
+  font-weight: bold;
+  border-radius: 10px;
+}
